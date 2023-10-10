@@ -15,14 +15,6 @@ namespace KhalitovAutoservice
     
     public partial class Khalitov_autoserviceEntities : DbContext
     {
-        private static Khalitov_autoserviceEntities _context;
-        public static Khalitov_autoserviceEntities GetContext()
-        {
-            if (_context == null)
-                _context = new Khalitov_autoserviceEntities();
-
-            return _context;
-        }
         public Khalitov_autoserviceEntities()
             : base("name=Khalitov_autoserviceEntities")
         {
