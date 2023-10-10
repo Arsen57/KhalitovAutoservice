@@ -19,3 +19,4 @@ D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\obj\Deb
 D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\obj\Debug\KhalitovAutoservice.exe
 D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\obj\Debug\KhalitovAutoservice.pdb
 D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\obj\Debug\App.baml
+D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\obj\Debug\KhalitovAutoservice_Content.g.cs
