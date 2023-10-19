@@ -24,7 +24,7 @@ namespace KhalitovAutoservice
         {
             InitializeComponent();
 
-            var currentServices = Khalitov_autoserviceEntities.GetContext().Service.ToList();
+            var currentServices = Khalitov_autoserviceEntities1.GetContext().Service.ToList();
 
             ServiceListView.ItemsSource = currentServices;
         }

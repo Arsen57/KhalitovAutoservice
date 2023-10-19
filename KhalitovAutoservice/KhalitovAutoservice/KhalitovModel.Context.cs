@@ -12,11 +12,19 @@ namespace KhalitovAutoservice
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
-    public partial class Khalitov_autoserviceEntities : DbContext
+
+    public partial class Khalitov_autoserviceEntities1 : DbContext
     {
-        public Khalitov_autoserviceEntities()
-            : base("name=Khalitov_autoserviceEntities")
+        private static Khalitov_autoserviceEntities1 _context;
+        public static Khalitov_autoserviceEntities1 GetContext()
+        {
+            if (_context == null)
+                _context = new Khalitov_autoserviceEntities1();
+            return _context;
+        }
+        
+        public Khalitov_autoserviceEntities1()
+            : base("name=Khalitov_autoserviceEntities1")
         {
         }
     

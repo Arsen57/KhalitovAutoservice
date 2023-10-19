@@ -2,7 +2,6 @@ D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\bin\Deb
 D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\bin\Debug\KhalitovAutoservice.exe
 D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\bin\Debug\KhalitovAutoservice.pdb
 D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\obj\Debug\KhalitovAutoservice.csproj.AssemblyReference.cache
-D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\obj\Debug\KhalitovAutoservice.csproj.SuggestedBindingRedirects.cache
 D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\obj\Debug\AddEditPage.g.cs
 D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\obj\Debug\MainWindow.g.cs
 D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\obj\Debug\ServicePage.g.cs
@@ -20,3 +19,9 @@ D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\obj\Deb
 D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\obj\Debug\KhalitovAutoservice.pdb
 D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\obj\Debug\App.baml
 D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\obj\Debug\KhalitovAutoservice_Content.g.cs
+D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\bin\Debug\EntityFramework.dll
+D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\bin\Debug\EntityFramework.SqlServer.dll
+D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\bin\Debug\EntityFramework.xml
+D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\bin\Debug\EntityFramework.SqlServer.xml
+D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\bin\Debug\ru\EntityFramework.resources.dll
+D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\obj\Debug\KhalitovAutoservice.csproj.CopyComplete
