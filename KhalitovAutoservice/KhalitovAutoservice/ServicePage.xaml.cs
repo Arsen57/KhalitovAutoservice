@@ -77,10 +77,10 @@ namespace KhalitovAutoservice
             ServiceListView.ItemsSource = currentServices;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Manager.MainFrame.Navigate(new AddEditPage());
-        }
+        //private void Button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Manager.MainFrame.Navigate(new AddEditPage());
+        //}
 
         private void ComboType_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -120,6 +120,25 @@ namespace KhalitovAutoservice
         private void RButtonUp_Checked(object sender, RoutedEventArgs e)
         {
             UpdateServices();
+        }
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new AddEditPage(null));
+        }
+
+        private void EditButton_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new AddEditPage((sender as Button).DataContext as Service));
+        }
+
+        private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (Visibility == Visibility.Visible)
+            {
+                Khalitov_autoserviceEntities1.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                ServiceListView.ItemsSource = Khalitov_autoserviceEntities1.GetContext().Service.ToList();
+            }
         }
 
         //private void RButtonDown_Checked_1(object sender, RoutedEventArgs e)
