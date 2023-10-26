@@ -39,7 +39,7 @@ namespace KhalitovAutoservice
                 errors.AppendLine("Укажите название услуги");
 
             if (_currentServise.Cost == 0)
-                errors.AppendLine("Укажите название услуги");
+                errors.AppendLine("Укажите стоимость услуги");
 
             if (_currentServise.Discount < 0 || _currentServise.Discount > 100)
                 errors.AppendLine("Укажите скидку");
