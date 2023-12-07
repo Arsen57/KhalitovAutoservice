@@ -153,6 +153,7 @@ namespace KhalitovAutoservice
                 Khalitov_autoserviceEntities1.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
                 ServiceListView.ItemsSource = Khalitov_autoserviceEntities1.GetContext().Service.ToList();
             }
+            UpdateServices();
         }
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
@@ -311,5 +312,17 @@ namespace KhalitovAutoservice
         {
             ChangePage(0, Convert.ToInt32(PageListBox.SelectedItem.ToString()) - 1);
         }
+
+        private void SignUpButton_Click(object sender, RoutedEventArgs e)
+        {
+            //открыть окно записи клиента на выбранную услугу
+            Manager.MainFrame.Navigate(new SignUpPage((sender as Button).DataContext as Service));
+        }
+
+        //private void SighUpButton_Click(object sender, RoutedEventArgs e)
+        //{
+
+        //}
+
     }
 }

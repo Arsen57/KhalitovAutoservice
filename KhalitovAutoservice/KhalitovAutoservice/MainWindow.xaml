@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KhalitovAutoservice"
         mc:Ignorable="d"
-        Title="Автосервис Халитов" Height="450" Width="800" FontFamily="Tw Cen MT" Icon="Resources/service_logo.png">
+        Title="Автосервис Халитов" MinHeight="450" MinWidth="800" FontFamily="Tw Cen MT" Icon="Resources/service_logo.png">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="75"/>

@@ -21,6 +21,7 @@ namespace KhalitovAutoservice
     public partial class AddEditPage : Page
     {
         private Service _currentServise = new Service();
+        bool CheckService = false;
         public AddEditPage(Service SelectedService)
         {
             InitializeComponent();
@@ -43,29 +44,47 @@ namespace KhalitovAutoservice
 
             if (_currentServise.Discount < 0 || _currentServise.Discount > 100)
                 errors.AppendLine("Укажите скидку");
-
+            
             if (string.IsNullOrWhiteSpace(_currentServise.Discount.ToString()))
                 _currentServise.Discount = 0;
-
-            if (string.IsNullOrWhiteSpace(_currentServise.DurationInSeconds))
+            
+            if (_currentServise.DurationInSeconds == 0)
                 errors.AppendLine("Укажите длительность услуги");
+
+            if (_currentServise.DurationInSeconds > 240 || _currentServise.DurationInSeconds < 0)
+                errors.AppendLine("Длительность не может быть больше 240 минут или  меньше 0 минут");
+
             if (errors.Length > 0)
             {
                 MessageBox.Show(errors.ToString());
                 return;
             }
-            if (_currentServise.ID == 0)
-                Khalitov_autoserviceEntities1.GetContext().Service.Add(_currentServise);
 
-            try
+            var allServices = Khalitov_autoserviceEntities1.GetContext().Service.ToList();
+            allServices = allServices.Where(p => p.Title == _currentServise.Title).ToList();
+
+            if (allServices.Count == 0 || (_currentServise.ID !=0 && allServices.Count <=1))
             {
-                Khalitov_autoserviceEntities1.GetContext().SaveChanges();
-                MessageBox.Show("информация сохранена");
-                Manager.MainFrame.GoBack();
+                if (_currentServise.ID == 0)
+                    Khalitov_autoserviceEntities1.GetContext().Service.Add(_currentServise);
+                try
+                {
+                    Khalitov_autoserviceEntities1.GetContext().SaveChanges();
+                    MessageBox.Show("информация сохранена");
+                    Manager.MainFrame.GoBack();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message.ToString());
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message.ToString());
+                MessageBox.Show("Уже существует такая услуга");
+            }
+            if (_currentServise.ID == 0)
+            {
+                Khalitov_autoserviceEntities1.GetContext().Service.Add(_currentServise);
             }
         }
     }

@@ -25,3 +25,5 @@ D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\bin\Deb
 D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\bin\Debug\EntityFramework.SqlServer.xml
 D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\bin\Debug\ru\EntityFramework.resources.dll
 D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\obj\Debug\KhalitovAutoservice.csproj.CopyComplete
+D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\obj\Debug\SignUpPage.g.cs
+D:\Downloads\KhalitovAutoservice\KhalitovAutoservice\KhalitovAutoservice\obj\Debug\SignUpPage.baml
